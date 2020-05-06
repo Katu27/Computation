@@ -31,6 +31,7 @@
 				<Compiler>
 					<Add option="-O2" />
 					<Add directory="include" />
+					<Add directory="D:/Code Blocks/SFML/SFML-2.5.1/include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -39,6 +40,7 @@
 					<Add library="sfml-network" />
 					<Add library="sfml-window" />
 					<Add library="sfml-system" />
+					<Add directory="D:/Code Blocks/SFML/SFML-2.5.1/lib" />
 				</Linker>
 			</Target>
 		</Build>

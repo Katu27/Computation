@@ -175,6 +175,7 @@ empty right
 empty right
 empty right
 empty right
+NANDgate right
 empty right
 empty right
 empty right
@@ -199,6 +200,7 @@ empty right
 empty right
 empty right
 empty right
+wire right
 empty right
 empty right
 empty right
@@ -223,6 +225,8 @@ empty right
 empty right
 empty right
 empty right
+wire3way down
+wireCorner right
 empty right
 empty right
 empty right
@@ -246,6 +250,8 @@ empty right
 empty right
 empty right
 empty right
+wire right
+wire right
 empty right
 empty right
 empty right
@@ -269,14 +275,8 @@ empty right
 empty right
 empty right
 empty right
-empty right
-empty right
-empty right
-empty right
-empty right
-empty right
-empty right
-empty right
+ANDgate down
+wireCorner up
 empty right
 empty right
 empty right

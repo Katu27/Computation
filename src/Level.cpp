@@ -3216,7 +3216,7 @@ void Level::Fill(std::pair<int, int> nr, int x)
 			ok2 = i == 3 && (orientation == "down" || orientation == "right") ? true : ok2;
 			if(ok2 == true)
 			{
-				component[Nexti][Nextj].isPowered = var1;
+				component[Nexti][Nextj].isPowered = std::max(component[Nexti][Nextj].isPowered, var1);
 				Fill({Nexti, Nextj}, i);
 			}
 		}
@@ -3404,7 +3404,7 @@ void Level::Fill(std::pair<int, int> nr, int x)
 			ok2 = i == 3 && (orientation == "down" || orientation == "right") ? true : ok2;
 			if(ok2 == true)
 			{
-				component[Nexti][Nextj].isPowered = var1;
+				component[Nexti][Nextj].isPowered = std::max(component[Nexti][Nextj].isPowered, var1);
 				Fill({Nexti, Nextj}, i);
 			}
 		}
@@ -3580,10 +3580,7 @@ void Level::Fill(std::pair<int, int> nr, int x)
 			ok2 = (i == 0 || i == 2) && var == "down" ? true : ok2;
 			ok2 = (i == 1 || i == 3) && var == "right" ? true : ok2;
 			if(ok2 == true)
-			{
 				component[Nexti][Nextj].isPowered = std::max(component[Nexti][Nextj].isPowered, var1), Fill({Nexti, Nextj}, i);
-				Fill({Nexti, Nextj}, i);
-			}
 		}
 
 		//Next is wireCorner
@@ -3595,7 +3592,7 @@ void Level::Fill(std::pair<int, int> nr, int x)
 			ok2 = i == 3 && (orientation == "down" || orientation == "right") ? true : ok2;
 			if(ok2 == true)
 			{
-				component[Nexti][Nextj].isPowered = var1;
+				component[Nexti][Nextj].isPowered = std::max(component[Nexti][Nextj].isPowered, var1);
 				Fill({Nexti, Nextj}, i);
 			}
 		}
@@ -3787,7 +3784,7 @@ void Level::Fill(std::pair<int, int> nr, int x)
 			ok2 = i == 3 && (orientation == "down" || orientation == "right") ? true : ok2;
 			if(ok2 == true)
 			{
-				component[Nexti][Nextj].isPowered = var1;
+				component[Nexti][Nextj].isPowered = std::max(component[Nexti][Nextj].isPowered, var1);
 				Fill({Nexti, Nextj}, i);
 			}
 		}
@@ -3979,7 +3976,7 @@ void Level::Fill(std::pair<int, int> nr, int x)
 			ok2 = i == 3 && (orientation == "down" || orientation == "right") ? true : ok2;
 			if(ok2 == true)
 			{
-				component[Nexti][Nextj].isPowered = var1;
+				component[Nexti][Nextj].isPowered = std::max(component[Nexti][Nextj].isPowered, var1);
 				Fill({Nexti, Nextj}, i);
 			}
 		}
@@ -4170,7 +4167,7 @@ void Level::Fill(std::pair<int, int> nr, int x)
 			ok2 = i == 3 && (orientation == "down" || orientation == "right") ? true : ok2;
 			if(ok2 == true)
 			{
-				component[Nexti][Nextj].isPowered = var1;
+				component[Nexti][Nextj].isPowered = std::max(component[Nexti][Nextj].isPowered, var1);
 				Fill({Nexti, Nextj}, i);
 			}
 		}
